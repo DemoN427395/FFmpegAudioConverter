@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FFMPEG Audio Converter</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; media-src 'self' blob: data: mediastream:;"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/frontend.js"></script>
+    <script src="./scripts/backendConvert.js"></script>
+  </head>
+  <body>
+    <form method="POST" enctype="multipart/form-data">
+      <button type="button" id="buttonChooseFile">Choose File</button>
+
+      <div class="container">
+        <button type="submit" id="buttonConvert">Convert To</button>
+        <div class="buttonsType">
+          <button type="button" class="buttonsTypeStyle" id="buttonMP3">.MP3</button>
+          <button type="button" class="buttonsTypeStyle" id="buttonOGG">.OGG</button>
+          <button type="button" class="buttonsTypeStyle" id="buttonWAV">.WAV</button>
+        </div>
+      </div>
+
+      <div class="selectedFiles">
+        <ul class="file-list"></ul>
+      </div>
+    </form>
+
+    <script src="./scripts/renderer.js"></script>
+  </body>
+</html>
