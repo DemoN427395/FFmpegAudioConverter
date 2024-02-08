@@ -11,30 +11,6 @@ console.log(ffmpeg.setFfmpegPath(ffmpegStatic))
 
 // process.env['ELECTRON_DISABLE_SECURITY_WARNINGS']=true
 
-// let optionsWav = {
-//   title: 'Save file - Electron example',
-
-//   buttonLabel: 'Save Electron File',
-
-//   filters: [{ name: 'wav', extensions: ['wav'] }],
-// }
-
-// let optionsOgg = {
-//   title: 'Save file - Electron example',
-
-//   buttonLabel: 'Save Electron File',
-
-//   filters: [{ name: 'ogg', extensions: ['ogg'] }],
-// }
-
-// let optionsMp3 = {
-//   title: 'Save file - Electron example',
-
-//   buttonLabel: 'Save Electron File',
-
-//   filters: [{ name: 'mp3', extensions: ['mp3'] }],
-// }
-
 let convertedFiles = []
 let archiveName
 
